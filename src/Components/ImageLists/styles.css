@@ -1,0 +1,29 @@
+.image-list ul {
+  max-width: calc(800px);
+  padding: 30px;
+  margin: auto;
+
+  border-radius: 15px;
+  list-style: none;
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+  background-color: #555;
+}
+
+.image-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.image-list img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
