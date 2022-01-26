@@ -8,7 +8,7 @@ export function Button(props) {
   if(isLoading) {
     return (
       <button style={{fontSize: `${size}px`}} className='btn'>
-      <FaSpinner className='spin'/>
+        <FaSpinner className='spin'/>
       </button>
     )
   }

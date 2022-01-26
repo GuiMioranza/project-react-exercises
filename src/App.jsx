@@ -1,8 +1,14 @@
-
-import { FaDoorOpen } from 'react-icons/fa'
+import React from 'react'
 import './App.css'
+import { FaDoorOpen } from 'react-icons/fa'
+
+import { AttendanceList }  from './Components/AttendanceList'
 import { Button } from './Components/Button/index'
-import { ImagesList } from './Components/ImageLists/index'
+import { Counter } from './Components/Counter'
+import { ImagesList } from './Components/ImageLists'
+import { PersonsList} from './Components/PeronsList'
+import { ThemedContainer } from  './Components/ThemedContainer'
+
 
 function App() {
   const imageUrl = "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -11,40 +17,38 @@ function App() {
   
   return (
     <div className='app'>
+
+      {/*<ImagesList counCount={3}/>*/} 
+      {/*<Counter />*/}
+      {/*<PersonList />*/}
+      <AttendanceList />
+      {/*<ThemedContainer />*/}
       
-      <img src={imageUrl} alt="tela pc react" width="180"/>
+      {/*<img src={imageUrl} alt="tela pc react" width="180"/>*/}
     
-      <Button
+      {/*<Button
         isLoading={false}
         size={30}
-      />
+      />*/}
 
-      <button size={40}>
+      {/*<button size={40}>
         <FaDoorOpen />
         <span>
           <p> Entrar no sistema </p>
         </span>
-      </button>
+      </button>*/}
 
-      <button id="login-button">
+      {/*<button id="login-button">
         <FaDoorOpen style={{fontSize: '35px'}} />
         <span> Fazer Login </span>
-      </button>
+      </button>*/}
 
-      <ImagesList counCount={3}/> 
-
-      <button size={25}>
+      {/*<button size={25}>
         Voltar ao topo
-      </button>
+      </button>*/}
     
     </div>
   )
 }
 
 export default App
-
-
-// b - crie uma lista com 12 URLs de imagens e as
-// exiba em tela fazendo um map nesta lista: todas 
-// urls podem ser iguais com este valor 
-//(https://source.unsplash.com/random/?city,night) 
