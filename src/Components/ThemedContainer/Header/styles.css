@@ -1,0 +1,33 @@
+.themed-header {
+  min-height: 30vh;
+  flex: 1;
+}
+
+.light {
+  background-color: #fff;
+  color: #555;
+}
+.light header {
+  background-color: rgb(241, 159, 159);
+  color: rgb(83, 53, 53);
+}
+
+.light footer {
+  background-color: rgb(170, 128, 128);
+  color: rgb(80, 42, 42);
+}
+
+.dark {
+  background-color: #333;
+  color: #ccc;
+}
+
+.dark header {
+  background-color: rgb(202, 118, 118);
+  color: rgb(63, 38, 38);
+}
+
+.dark footer {
+  background-color: rgb(163, 117, 117);
+  color: rgb(124, 53, 53);
+}

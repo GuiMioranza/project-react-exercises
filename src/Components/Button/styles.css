@@ -1,0 +1,17 @@
+.spin {
+  animation: 1s spin infinite;
+}
+
+.btn {
+  padding: 8px 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
